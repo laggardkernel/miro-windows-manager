@@ -19,11 +19,12 @@ hs.loadSpoon("MiroWindowsManager")
 
 hs.window.animationDuration = 0.3
 spoon.MiroWindowsManager:bindHotkeys({
-  up = {hyper, "up"},
-  right = {hyper, "right"},
-  down = {hyper, "down"},
-  left = {hyper, "left"},
-  fullscreen = {hyper, "f"}
+  up = {{}, 'up'},
+  right = {{}, 'right'},
+  down = {{}, 'down'},
+  left = {{}, 'left'},
+  fullscreen = {{}, 'f'},
+  middle ={{}, 'm'}
 })
 ```
 
@@ -42,7 +43,7 @@ In the snippet above configure Miro'w Windows Manager in the following way:
  - `hyper` + `down`: move to the bottom half of the screen
  - `hyper` + `left`: move to the left half of the screen
 
-By repeating these shortcuts the window is resized to be one third or two thirds and again in one half. 
+By repeating these shortcuts the window is resized to be one third or two thirds and again in one half.
 
 ### Move to corners
 
@@ -51,8 +52,8 @@ By repeating these shortcuts the window is resized to be one third or two thirds
  - `hyper` + `up` + `left`: move the window to the top-left corner
  - `hyper` + `down` + `left`: move the window to the bottom-left corner
 
- When the window is in the corner, it will have one half of screen height and one half of screen width. 
- The arrows can be used to expand the height/width to be one third, two thirds or again one half. 
+ When the window is in the corner, it will have one half of screen height and one half of screen width.
+ The arrows can be used to expand the height/width to be one third, two thirds or again one half.
  For example if the window is in the top-right corner, pressing `hyper` + `up` the window height will be resized to be one third, while pressing `hyper` + `right` the window width will be resized to be one third; in this case `hyper` + `left` and `hyper` + `down` will move the window to the top-left and bottom-right corners, respectively.
 
 ### Expand to fit the entire height or width
@@ -79,7 +80,7 @@ The snippet above configures the animation to last `0.3s` with `hs.window.animat
 Here comments from the users, just as reviews.
 
 > it's something I have been looking for all my life! It is really intuitive and ingenious once you see the magic it can do.
-> 
+>
 > &mdash; [rxng](https://github.com/miromannino/hammerspoon-config/issues/1)
 
 > Really loving the arrow based positioning, thanks for making this ! I can now uninstall “spectacle” which I was using for the same purpose but the key bindings were unintuitive.
